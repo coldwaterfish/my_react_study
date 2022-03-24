@@ -1,0 +1,52 @@
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.content-layout {
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    color: aqua;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+
+    .header-link {
+      color: aqua;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .search {
+      display: none;
+    }
+  }
+}

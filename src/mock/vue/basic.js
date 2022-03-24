@@ -1,0 +1,161 @@
+import Mock from 'mockjs'
+export default Mock.mock('/vue/basic', 'get', options=>{
+    return Mock.mock([
+          {
+            key: 201000,
+            title:"模板语法",
+            createTime:"2022-02-01 11:30:29",
+            updateTime:"2022-02-08 11:30:29",
+          },
+          {
+            key: 201001,
+            title:"vue-loader",
+            createTime:"2022-02-01 11:31:29",
+            updateTime:"2022-02-08 11:31:29",
+          },
+          {
+            key: 201002,
+            title:"开发者工具",
+            createTime:"2022-02-01 11:32:29",
+            updateTime:"2022-02-08 11:32:29",
+          },
+          {
+            key: 201003,
+            title:"数据绑定",
+            createTime:"2022-02-01 11:33:29",
+            updateTime:"2022-02-08 11:33:29",
+          },
+          {
+            key: 201004,
+            title:"两种写法",
+            createTime:"2022-02-01 11:34:29",
+            updateTime:"2022-02-08 11:34:29",
+          },
+          {
+            key:201005,
+            title:"defineProperty",
+            createTime:"2022-02-01 11:35:29",
+            updateTime:"2022-02-08 11:35:29",
+          },
+          {
+            key: 201006,
+            title:"事件处理",
+            createTime:"2022-02-01 11:36:29",
+            updateTime:"2022-02-08 11:36:29",
+          },
+          {
+            key: 201007,
+            title:"键盘事件",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201008,
+            title:"计算属性",
+            createTime:"2022-02-01 11:36:29",
+            updateTime:"2022-02-08 11:36:29",
+          },
+          {
+            key: 201009,
+            title:"监视属性",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201010,
+            title:"样式绑定",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201011,
+            title:"条件渲染",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201012,
+            title:"列表渲染",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201013,
+            title:"列表过滤",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201014,
+            title:"vue数据监测",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201015,
+            title:"表单数据",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201016,
+            title:"过滤器",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201017,
+            title:"组件",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201018,
+            title:"组件传值",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201019,
+            title:"自定义事件",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201020,
+            title:"事件总线",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201021,
+            title:"$nextTick",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201022,
+            title:"动画",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201023,
+            title:"过渡",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201024,
+            title:"插槽",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+          {
+            key: 201025,
+            title:"强制刷新",
+            createTime:"2022-02-01 11:37:29",
+            updateTime:"2022-02-08 11:37:29",
+          },
+    ]);
+})

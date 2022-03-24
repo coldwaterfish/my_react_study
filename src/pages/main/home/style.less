@@ -1,0 +1,26 @@
+.content-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .article-count {
+    margin-top: 30px;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+  }
+  a {
+    display: block;
+    font-size: 18px;
+    color: teal;
+    margin: 6px auto;
+  }
+  a:hover {
+    color: orangered;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article-count {
+    display: none;
+  }
+}
