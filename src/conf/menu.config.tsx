@@ -2,7 +2,6 @@
 
 import { ReactNode } from "react";
 import Iconfont from "assets/font/iconfont";
-import { SettingOutlined } from "@ant-design/icons";
 
 export interface IMenuItem {
   title: string;
@@ -18,25 +17,94 @@ const menuList: IMenuItem[] = [
     icon: <Iconfont type="icon-home" />,
   },
   {
-    title: "w3c",
-    key: "w3c",
+    title: "浏览器",
+    key: "browser",
     icon: <Iconfont type="icon-Web" />,
-    role: ["w3c"],
+    role: ["browser"],
     children: [
       {
-        title: "html",
-        key: "w3c/html",
+        title: "chrome",
+        key: "browser/chrome",
         icon: <Iconfont type="icon-h5e" />,
       },
+    ],
+  },
+  {
+    title: "html",
+    key: "html",
+    icon: <Iconfont type="icon-h5e" />,
+    role: ["html"],
+    children: [
       {
-        title: "css",
-        key: "w3c/css",
-        icon: <Iconfont type="icon-css3" />,
+        title: "basic",
+        key: "html/basic",
+        icon: <Iconfont type="icon-neirong2" />,
+      },
+    ],
+  },
+  {
+    title: "css",
+    key: "css",
+    icon: <Iconfont type="icon-css3" />,
+    role: ["css"],
+    children: [
+      {
+        title: "basic",
+        key: "css/basic",
+        icon: <Iconfont type="icon-neirong2" />,
       },
       {
-        title: "js",
-        key: "w3c/js",
-        icon: <Iconfont type="icon-js" />,
+        title: "变形动画",
+        key: "css/animation",
+        icon: <Iconfont type="icon-donghuapian" />,
+      },
+      {
+        title: "特效",
+        key: "css/effects",
+        icon: <Iconfont type="icon-texiao" />,
+      },
+      {
+        title: "less",
+        key: "css/less",
+        icon: <Iconfont type="icon-less" />,
+      },
+      {
+        title: "sass",
+        key: "css/sass",
+        icon: <Iconfont type="icon-sass" />,
+      },
+    ],
+  },
+  {
+    title: "js",
+    key: "js",
+    icon: <Iconfont type="icon-js" />,
+    role: ["js"],
+    children: [
+      {
+        title: "basic",
+        key: "js/basic",
+        icon: <Iconfont type="icon-neirong2" />,
+      },
+      {
+        title: "dom",
+        key: "js/dom",
+        icon: <Iconfont type="icon-dom" />,
+      },
+      {
+        title: "bom",
+        key: "js/bom",
+        icon: <Iconfont type="icon-BOM" />,
+      },
+      {
+        title: "ajax",
+        key: "js/ajax",
+        icon: <Iconfont type="icon-aJax" />,
+      },
+      {
+        title: "exercise",
+        key: "js/exercise",
+        icon: <Iconfont type="icon-lianxi" />,
       },
     ],
   },
@@ -75,6 +143,11 @@ const menuList: IMenuItem[] = [
         title: "element",
         key: "vue/element",
         icon: <Iconfont type="icon-neirong2" />,
+      },
+      {
+        title: "practice",
+        key: "vue/practice",
+        icon: <Iconfont type="icon-lianxi" />,
       },
     ],
   },
@@ -123,65 +196,29 @@ const menuList: IMenuItem[] = [
     role: ["topic"],
     children: [
       {
-        title: "ajax",
-        key: "topic/ajax",
-        icon: <Iconfont type="icon-aJax" />,
-      },
-      {
         title: "nginx",
-        key: "topic/nginx ",
+        key: "topic/nginx",
         icon: <Iconfont type="icon-nginx" />,
       },
-    ],
-  },
-  {
-    title: "扩展",
-    key: "extend",
-    icon: <Iconfont type="icon-gengduo" />,
-    role: ["extend"],
-    children: [
+      {
+        title: "移动端",
+        key: "topic/mobile",
+        icon: <Iconfont type="icon-xiangyingshi" />,
+      },
       {
         title: "优化",
-        key: "extend/optimize",
+        key: "topic/optimize",
         icon: <Iconfont type="icon-optimization" />,
       },
       {
         title: "安全",
-        key: "extend/safety ",
+        key: "topic/safety",
         icon: <Iconfont type="icon-anquan" />,
       },
       {
         title: "兼容性",
-        key: "extend/compatible",
+        key: "topic/compatible",
         icon: <Iconfont type="icon-jiyukaiyuanjianrongkaiyuan" />,
-      },
-      {
-        title: "适配",
-        key: "extend/adaptation",
-        icon: <Iconfont type="icon-shipei" />,
-      },
-    ],
-  },
-  {
-    title: "练习",
-    key: "exercise",
-    icon: <Iconfont type="icon-lianxi" />,
-    role: ["exercise"],
-    children: [
-      {
-        title: "html",
-        key: "exercise/html",
-        icon: <Iconfont type="icon-h5e" />,
-      },
-      {
-        title: "css",
-        key: "exercise/css",
-        icon: <Iconfont type="icon-css3" />,
-      },
-      {
-        title: "js",
-        key: "exercise/js",
-        icon: <Iconfont type="icon-js" />,
       },
     ],
   },
@@ -211,30 +248,27 @@ const menuList: IMenuItem[] = [
         key: "tool/mock",
         icon: <Iconfont type="icon-MockTest" />,
       },
-    ],
-  },
-  {
-    title: "工作",
-    key: "work",
-    icon: <Iconfont type="icon-work" />,
-    role: ["work"],
-    children: [
       {
-        title: "compony",
-        key: "work/compony",
-        icon: <Iconfont type="icon-gongsi" />,
+        title: "vscode",
+        key: "tool/vscode",
+        icon: <Iconfont type="icon-VsCode" />,
       },
       {
         title: "computer",
-        key: "work/computer",
+        key: "tool/computer",
         icon: <Iconfont type="icon-huanjingsheji" />,
       },
+      {
+        title: "webpack",
+        key: "tool/webpack",
+        icon: <Iconfont type="icon-webpack" />,
+      },
+      {
+        title: "eslint",
+        key: "tool/eslint",
+        icon: <Iconfont type="icon-eslint" />,
+      },
     ],
-  },
-  {
-    title: "设置",
-    key: "user",
-    icon: <SettingOutlined style={{ fontSize: "12px" }} />,
   },
 ];
 

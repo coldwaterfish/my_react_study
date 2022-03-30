@@ -168,6 +168,10 @@ const ArticleList = () => {
       title: "创建日期",
       dataIndex: "createTime",
       key: "createTime",
+      render: (text: string) => {
+        if (text) return <span>{text}</span>
+        return <span>2022-01-01</span>
+      },
       // 响应式-显示/隐藏
       responsive: ["md"],
     },
@@ -175,6 +179,10 @@ const ArticleList = () => {
       title: "修改日期",
       dataIndex: "updateTime",
       key: "updateTime",
+      render: (text: string) => {
+        if (text) return <span>{text}</span>
+        return <span>2022-01-02</span>
+      },
       responsive: ["md"],
     },
     {

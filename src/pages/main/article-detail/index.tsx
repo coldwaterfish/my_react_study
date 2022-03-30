@@ -1,8 +1,9 @@
-import "./style.less";
+import  "./style.less";
 
 import { memo, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
 
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark-dimmed.css";
@@ -45,12 +46,13 @@ const ArticleDetail: React.FC<any> = () => {
   };
 
   return (
-    <>
-      <ReactMarkdown
+    <div id="detail">
+      <ReactMarkdown 
         // className="markdown-body"
         children={currentArticle.content}
+        remarkPlugins={[remarkGfm]}
       />
-    </>
+    </div>
   );
 };
 

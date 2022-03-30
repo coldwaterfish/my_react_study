@@ -5,10 +5,18 @@
 //     ]);
 // })
 
-// w3c
-import whtml from './w3c/html'
-import wcss from './w3c/css'
-import wjs from './w3c/javascript'
+// html
+import hbasic from './html/basic'
+
+// css
+import cbasic from './css/basic'
+import cless from './css/less'
+
+// js
+import jbasic from './js/basic'
+import jbom from './js/bom'
+import ajax from './js/ajax'
+import jexercise from './js/exercise'
 
 // login
 import login from './login/login'
@@ -20,41 +28,39 @@ import vcli from './vue/cli'
 import vdirective from './vue/directives'
 import vrouter from './vue/router'
 import vvuex from './vue/vuex'
+import vpractice from './vue/practice'
+import velement from './vue/element'
 
 // react
 import rbasic from './react/basic'
 import rantd from './react/antd'
 import rcra from './react/cra'
 
-// extend
-import adaptation from './extend/adaptation'
-import compatible from './extend/compatible'
-import optimize from './extend/optimize'
-import safety from './extend/safety'
-
 // tool
 import echarts from './tool/echarts'
 import mock from './tool/mock'
+import vscode from './tool/vscode'
+import computer from './tool/computer'
+import webpack from './tool/webpack'
+import eslint from './tool/eslint'
 
 // topic
-import ajax from './topic/ajax'
+import nginx from './topic/nginx'
+import mobile from './topic/mobile'
+import compatible from './topic/compatible'
+import optimize from './topic/optimize'
+import safety from './topic/safety'
 
-// exercise
-import ehtml from './exercise/html'
-import ecss from './exercise/css'
-import ejs from './exercise/javascript'
-
-// work
-import compony from './work/compony'
-import computer from './work/computer'
 
 export {
-    whtml,wcss,wjs,login,token,
-    vbasic,vcli,vdirective,vrouter,vvuex,
+    hbasic,
+    cbasic,cless,
+    jbasic,ajax,jbom,jexercise,
+    login,token,
+    vbasic,vcli,vdirective,vrouter,vvuex,vpractice,velement,
     rbasic,rantd,rcra,
-    ajax,adaptation,compatible,optimize,safety,
-    echarts,mock,
-    ehtml,ecss,ejs,
-    compony,computer
+    nginx,mobile,
+    compatible,optimize,safety,
+    echarts,mock,computer,vscode,webpack,eslint
 }
 
